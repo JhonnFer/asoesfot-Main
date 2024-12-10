@@ -427,3 +427,12 @@ footer{
     font-size: 14px;
     color: #555;
 }
+/* Estilo para el menú hamburguesa */
+.header__hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.header__hamburger .fas {
+    font-size: 1.5rem;
+}
