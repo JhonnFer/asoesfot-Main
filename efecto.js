@@ -14,6 +14,4 @@ const typewriter = (text, elementId, speed) => {
     type();
 };
 
-// Texto que deseas mostrar
-const message = "Bienvenidos a ASOESFOT.";
-typewriter(message, "typed", 100); // Llama a la función
+

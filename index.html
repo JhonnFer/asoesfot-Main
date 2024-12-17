@@ -16,7 +16,9 @@
         <link rel="stylesheet" href="./src/css/styles.css">
         <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3275/3275371.png" type="image/x-icon">
     
-        <script src="./src/js/hamburguesa.js" defer></script>
+        <script src="src/js/hamburguesa.js" defer></script>
+       
+
     </head>
 <body>
     <header class="header">
@@ -24,6 +26,8 @@
             <div class="header__logo">
                 <h1>ASO<span class="header__site">ESFOT</span></h1>
             </div>
+            
+            
     
             <!-- Barra de navegación (oculta en móvil por defecto) -->
             <div class="header__barra">
@@ -37,10 +41,13 @@
                     <a href="src/pages/login.html" class="button">Login</a>
                     <a href="src/pages/registro.html" class="button">Registro</a>
                 </div>
-            </div>
+                <div class="header__hamburguesa" id="hamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
     
-            <!-- Icono hamburguesa (visible solo en móviles) -->
-            <div class="header__hamburger"><i class="fas fa-bars"></i></div>
+                
+            </div>
+            
         </nav>
     </header>
     
@@ -151,7 +158,7 @@
     </footer>
 
     <!-- Referencia al archivo de JavaScript -->
-    <script src="src/js/menu.js"></script> 
+    <script src="src/js/hamburguesa.js"></script> 
     <script src="efecto.js"></script>
 </body>
 </html>

@@ -427,12 +427,25 @@ footer{
     font-size: 14px;
     color: #555;
 }
-/* Estilo para el menú hamburguesa */
-.header__hamburger {
-    display: none;
-    cursor: pointer;
+.header__barra {
+    display: flex; /* Muestra el menú en pantallas grandes */
 }
 
-.header__hamburger .fas {
-    font-size: 1.5rem;
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header__barra {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+
+    .header__hamburguesa {
+        display: block; /* Muestra el botón en pantallas pequeñas */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+
+    .header__barra.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
 }
